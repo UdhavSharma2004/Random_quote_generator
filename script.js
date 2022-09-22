@@ -17,7 +17,7 @@ let wid=document.getElementById("wrtr");
 let bid=document.getElementById("btn");
 
 bid.addEventListener("click",function(){
-    let ran= Math.floor(Math.random()*5);
-    qid.innerText=`${quoteobj[ran]}`;
-    wid.innerText=`${writerobj[ran]}`;
+    let ran= Math.floor(Math.random()*quoteobj.length);
+    qid.innerText=quoteobj[ran];
+    wid.innerText=writerobj[ran];
 });
