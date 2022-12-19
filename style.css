@@ -7,7 +7,7 @@
     text-align: center;
 }
 body{
-    background:-moz-linear-gradient(#99b898,#fecea8,#ff847c,#e8a45f,#2a363b);
+    background:linear-gradient(#99b898,#fecea8,#ff847c,#e8a45f,#2a363b);
     width:100vw;
     height:100vh;
     display:flex;
