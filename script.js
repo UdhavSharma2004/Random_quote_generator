@@ -6,7 +6,9 @@ let bid=document.getElementById("btn");
 
 bid.addEventListener("click",function(){
     fetch(url).then((data) => data.json()).then((item)=>{
-        qid.innerText=item.content;
-        wid.innerText=item.author;
+        let cont='"'+" "+item.content+" "+'"'
+        qid.innerText=cont;
+        let auth="Author : - "+item.author;
+        wid.innerText=auth;
     });
 });
